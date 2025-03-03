@@ -123,52 +123,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	})
 
 
-	// select.addEventListener('click', () => {
-	// 	const selectedValue = select.value
-	// 	if (selectedValue === "date") {
-	// 		account.transactions.sort((a, b) => {
-	// 			return new Date(b.date).getTime() - new Date(a.date).getTime()
-	// 		})
-	// 	} else if (selectedValue === "amount") {
-	// 		account.transactions.sort((a, b) => {
-	// 			return b.amount - a.amount
-	// 		})
-	// 	}
-	// 	upDateUi()
-	// })
-
-	// exportBtn.addEventListener('click', () => {
-	// 	const transactions = account.transactions
-	// 	if (transactions.length > 0) {
-	// 		let csvContent = "Date,Type,Amount,Currency\n"
-	// 		transactions.forEach((tr) => {
-	// 			csvContent += `${tr.date},${tr.type},${tr.amount},USD\n`
-
-	// 			const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" })
-	// 			const url = URL.createObjectURL(blob)
-
-	// 			const downloadLink = document.getElementById('csvDownloadLink')
-	// 			downloadLink.href = url
-	// 			downloadLink.download = "transactions.csv"
-	// 			document.body.appendChild(downloadLink)
-	// 			downloadLink.click()
-	// 			document.body.removeChild(downloadLink)
-
-	// 			setTimeout(() => URL.revokeObjectURL(url), 5000)
-	// 			window.location.reload()
-	// 		})
-	// 	} else {
-	// 		Toastify({
-	// 			text: "No transactions to export",
-	// 			duration: 2000,
-	// 			close: true,
-	// 			gravity: "top",
-	// 			position: "center",
-	// 			backgroundColor: "red",
-	// 		}).showToast()
-	// 	}
-
-	// })
 
 	logoutBtn.addEventListener('click', () => {
 		localStorage.removeItem('currentUser')
