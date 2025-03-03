@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+body{
+    background:linear-gradient(135deg, #263318, #000000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.login-container{
+    background: rgba(255, 5, 5, 0);
+    padding: 30px;
+    border-radius:30px;
+    box-shadow: 0px 0px 1px rgba(250, 1, 1, 0.2);
+    width: 350px;
+    text-align: center;
+}
+h2{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.input-group{
+    text-align: left;
+    margin-bottom: 15px;
+
+}
+.input-group label{
+    color: #fff;
+    font-size: 14px;
+    display: block;
+      margin-bottom: 5px;
+
+}
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.login-btn{
+    width: 100%;
+    padding: 10px;
+    background: #ffb400;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.login-btn:hover{
+    background-color: aqua
+} 

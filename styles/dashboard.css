@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f4f7fc;
+	font-family: 'Poppins', sans-serif;
+}
+
+h1,
+p {
+	color: #ecf0f1;
+}
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Navbar styles */
+.navbar {
+	background: #ff0000;
+	color: #ecf0f1;
+}
+.navbar__nav {
+	padding: 20px 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navbar__logo a {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #ecf0f1;
+}
+
+.navbar__menu {
+	list-style-type: none;
+	display: flex;
+	gap: 20px;
+}
+
+.navbar__menu li {
+	display: inline;
+}
+
+.navbar__menu a {
+	color: #ecf0f1;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+.navbar__user {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+/* Profile image style */
+.navbar__profile-img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.navbar__user span {
+	font-size: 18px;
+}
+
+/* Button styles */
+button {
+	padding: 8px 16px;
+	background-color: #218838;
+	color: white;
+	border: none;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+/* Dashboard styles */
+.dashboard {
+	padding: 40px;
+	margin-top: 20px;
+	background-color: #ecf0f1;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 600px;
+	margin: 20px auto;
+}
+
+.dashboard h1 {
+	font-size: 24px;
+	color: #2c3e50;
+}
+
+.dashboard p {
+	font-size: 20px;
+	font-weight: bold;
+	color: #2c3e50;
+}
+.transactions {
+	max-width: 500px;
+	margin: 20px;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.transactions h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.input-group {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+.input-group input {
+	width: 70%;
+	padding: 10px;
+	border: 2px solid #ddd;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+.input-group button {
+	padding: 10px 15px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.deposit-btn {
+	background-color: #28a745;
+	color: white;
+}
+
+.withdraw-btn {
+	background-color: #dc3545;
+	color: white;
+}
+
+.deposit-btn:hover {
+	background-color: #218838;
+}
+
+.withdraw-btn:hover {
+	background-color: #c82333;
+}
+
+.dashboard-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+	gap: 30px;
+}
+
+.dashboard,
+.transactions {
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	min-height: 150px; 
+}
+
+/* Dashboard Header */
+.dashboard h1 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.dashboard p {
+	font-size: 18px;
+	color: #666;
+	font-weight: bold;
+}
+
+/* Transactions Section */
+.transactions h2 {
+	font-size: 22px;
+	margin-bottom: 10px;
+	color: #333;
+}
+
+.input-group {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+	margin-bottom: 15px;
+}
+
+.input-group input {
+	width: 60%;
+	padding: 10px;
+	border: 2px solid #ddd;
+	outline: none;
+	border-radius: 5px;
+	font-size: 16px;
+}
+.input-group input:focus {
+	border: 2px solid #28a745;
+}
+.input-group button {
+	padding: 10px 15px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+
+.deposit-btn {
+	background-color: #28a745;
+	color: white;
+}
+
+.withdraw-btn {
+	background-color: #dc3545;
+	color: white;
+}
+
+.deposit-btn:hover {
+	background-color: #218838;
+}
+
+.withdraw-btn:hover {
+	background-color: #c82333;
+}
+
+/* Transaction History */
+
+h1 {
+	font-size: 30px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+}
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+.tbl-header {
+	background: linear-gradient(to right, #25c481, #25b7c4);
+}
+.tbl-content {
+	height: 300px;
+	overflow-x: auto;
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+th {
+	padding: 20px 15px;
+	text-align: left;
+	font-weight: 500;
+	font-size: 16px;
+	color: black;
+	text-transform: uppercase;
+}
+td {
+	padding: 15px;
+	text-align: left;
+	vertical-align: middle;
+	font-weight: 300;
+	font-size: 16px;
+	color: black;
+	border-bottom: solid 1px #25c481;
+}
+
+.transaction-list {
+	list-style: none;
+	padding: 0;
+}
+
+.transaction-list li {
+	padding: 8px;
+	font-size: 16px;
+	border-bottom: 1px solid #ddd;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.transaction-list li span {
+	font-weight: bold;
+}
+
+.transaction-deposit {
+	color: #28a745;
+}
+
+.transaction-withdraw {
+	color: #dc3545;
+}
+
+.transaction-controls {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.search-input {
+	padding: 8px;
+	font-size: 16px;
+	width: 250px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+.sort-controls {
+	display: flex;
+	gap: 10px;
+}
+
+.custom-select {
+	position: relative;
+	width: 250px;
+}
+select {
+	appearance: none;
+	width: 100%;
+	padding: 12px;
+	border: 2px solid #3498db;
+	border-radius: 8px;
+	background-color: white;
+	font-size: 16px;
+	cursor: pointer;
+	outline: none;
+}
+.custom-select::after {
+	content: '\25BC';
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	pointer-events: none;
+	color: #3498db;
+}
+select:hover,
+select:focus {
+	border-color: #2980b9;
+}
+select option {
+	background-color: #ffffff;
+	color: #333;
+	padding: 10px;
+	font-size: 16px;
+}
+select option:hover {
+	background-color: #3498db;
+	color: white;
+}
+/* Responsivlik */
+@media (max-width: 900px) {
+	.dashboard-container {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar__menu {
+		display: none;
+	}
+
+	.navbar__user {
+		flex-direction: column;
+	}
+
+	.navbar__user button {
+		margin-top: 10px;
+	}
+}

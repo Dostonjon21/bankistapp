@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dashboard</title>
+	<link rel="icon" type="image/x-icon" href="../img/logo.jpg" />
+	<link rel="stylesheet" href="../styles/dashboard.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+		integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+</head>
+
+<body>
+	<!-- Navbar -->
+	<div class="navbar">
+		<nav class="navbar__nav container">
+			<div class="navbar__logo">
+				<a href="#">Bankist</a>
+			</div>
+			<ul class="navbar__menu">
+				<li><a href="#">Transactions</a></li>
+				<li><a href="./credit.html">Get Credit</a></li>
+			</ul>
+			<div class="navbar__user">
+				<img id="profileImage" src="" alt="Profile" class="navbar__profile-img" />
+				<span id="ownerName"></span>
+				<button id="logoutBtn">Log Out</button>
+			</div>
+		</nav>
+	</div>
+	<div class="dashboard-container">
+		<div class="dashboard">
+			<h1>Welcome, <span id="welcomeOwner"></span></h1>
+			<p>Your balance: $<span id="balance"></span></p>
+		</div>
+
+		<div class="transactions">
+			<h2>Manage Transactions</h2>
+			<div class="input-group">
+				<input type="number" id="amountInput" placeholder="Enter amount" />
+				<button class="deposit-btn" id="depositBtn">Deposit</button>
+				<button class="withdraw-btn" id="withdrawBtn">Withdraw</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="transaction-controls">
+			<input type="text" id="searchInput" placeholder="Search transactions..." class="search-input" />
+			<div class="sort-controls custom-select">
+				<button id="exportBtn" class="export-btn">Export Transactions</button>
+				<a id="csvDownloadLink" style="display: none;"></a>
+				<select id="mySelect">
+					<option value="" disabled selected>Choose</option>
+					<option value="date" id="sortByDate">Sort by Date</option>
+					<option value="amount" id="sortByAmount">Sort by Amount</option>
+				</select>
+			</div>
+		</div>
+		<section>
+			<h1>Transactions History</h1>
+			<div class="tbl-header">
+				<table id="transactionTable" class="transaction-table">
+					<thead>
+						<tr>
+							<th>Type</th>
+							<th>Amount</th>
+							<th>Date</th>
+							<th>Symbol of type</th>
+						</tr>
+					</thead>
+				</table>
+			</div>
+			<div class="tbl-content">
+				<table cellpadding="0" cellspacing="0">
+					<tbody id="transactionList">
+
+					</tbody>
+				</table>
+			</div>
+		</section>
+	</div>
+	
+	<script src="../js/dashnoard.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
