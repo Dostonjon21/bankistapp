@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: sans-serif;
 }
 body{
     background:linear-gradient(135deg, #263318, #000000);
@@ -14,16 +14,22 @@ body{
     height: 100vh;
 }
 .login-container{
-    background: rgba(255, 5, 5, 0);
+    background: rgba(218, 7, 7, 0);
     padding: 30px;
     border-radius:30px;
-    box-shadow: 0px 0px 1px rgba(250, 1, 1, 0.2);
+    box-shadow: 0px 0px 1px rgba(214, 210, 210, 0.2);
     width: 350px;
     text-align: center;
 }
 h2{
-    color: #fff;
+    color: #ffffff;
     margin-bottom: 20px;
+    font-style: normal;
+    font-size: 30px;
+}
+.foyda{
+    font-size: 70px;
+    color: #ffffff;
 }
 .input-group{
     text-align: left;

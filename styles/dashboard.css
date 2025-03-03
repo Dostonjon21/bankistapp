@@ -27,7 +27,7 @@ p {
 }
 /* Navbar styles */
 .navbar {
-	background: #ff0000;
+	background: #0eacac;
 	color: #ecf0f1;
 }
 .navbar__nav {
@@ -200,7 +200,7 @@ button {
 	font-weight: bold;
 }
 
-/* Transactions Section */
+
 .transactions h2 {
 	font-size: 22px;
 	margin-bottom: 10px;
@@ -252,7 +252,6 @@ button {
 	background-color: #c82333;
 }
 
-/* Transaction History */
 
 h1 {
 	font-size: 30px;
@@ -377,7 +376,6 @@ select option:hover {
 	background-color: #3498db;
 	color: white;
 }
-/* Responsivlik */
 @media (max-width: 900px) {
 	.dashboard-container {
 		grid-template-columns: 1fr;
